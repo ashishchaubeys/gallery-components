@@ -1,0 +1,48 @@
+.pd-layout {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.pd-layout > * {
+    grid-area: 1/1;
+    transition: .4s;
+    width: 100%;
+}
+.pd-layout .pd-caption {
+    display: grid;
+    align-items: end;
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: .75rem;
+    color: #0000;
+    background: var(--c, #0009);
+    clip-path: inset(0 var(--_i, 100%) 0 0);
+    -webkit-mask: linear-gradient(#000 0 0), linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+}
+.pd-layout:hover .pd-caption{
+    --_i: 0%;
+}
+.pd-layout:hover img {
+    transform: scale(1.4);
+}
+@supports not (-webkit-mask-clip: text;){
+    .pd-layout .pd-caption {
+        -webkit-mask: none;
+        color: #fff;
+    }
+}
+.mega-menu-image-layout {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    /* grid-auto-flow: column; */
+    grid-template-columns: auto auto; /*Or we can set 1fr 1fr*/
+    /* grid-template-columns: 50% 50%; */
+    place-content: center;
+    background: #425a52;
+    /* width: fit-content; */
+}
