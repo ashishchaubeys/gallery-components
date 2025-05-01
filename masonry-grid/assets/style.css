@@ -1,0 +1,242 @@
+.masonry_section {
+    font-family: sans-serif;
+    margin: 0;
+    background: #f2f2f2;
+}
+.headlines h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+.headlines p {
+    text-align: center;
+    margin-top: 60px;
+}
+.masonry_wrapper {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+    margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+/* +++++++++++ Without Effect/Animation ++++++++++ */
+/* .item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    -webkit-transition: 1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+    overflow: hidden;
+}
+
+.item img {
+    max-width: 100%;
+} */
+
+/* +++++++++++ Basic Zoom-in Animation ++++++++++ */
+        .item {
+            display: inline-block;
+            background: #fff;
+            padding: 1em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            -webkit-transition: 1s ease all;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-shadow: 2px 2px 4px 0 #ccc;
+            overflow: hidden;
+        }
+        .item:hover img{
+            transform: scale(1.5);
+        }
+        .item img {
+            max-width: 100%;
+            transition: transform .5s ease;
+        }
+
+
+/* +++++++++++ Ｑｕｉｃｋ ｚｏｏｍ-ｉｎ Animation ++++++++++ */
+        /* .item {
+            display: inline-block;
+            background: #fff;
+            padding: 1em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            -webkit-transition: 1s ease all;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-shadow: 2px 2px 4px 0 #ccc;
+            overflow: hidden;
+        }
+        .item:hover img{
+            transform: scale(2);
+        }
+        .item img {
+            max-width: 100%;
+            transform-origin: 0 0;
+            transition: transform .25s, visibility .25s ease-in;
+        } */
+
+
+
+/* +++++++++++ Ｐｏｉｎｔ-ｚｏｏｍ Animation ++++++++++ */
+        /* .item {
+            display: inline-block;
+            background: #fff;
+            padding: 1em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            -webkit-transition: 1s ease all;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-shadow: 2px 2px 4px 0 #ccc;
+            overflow: hidden;
+        }
+        .item:hover img{
+            transform: scale(5);
+        }
+        .item img {
+            max-width: 100%;
+            transform-origin: 65% 75%;
+            transition: transform 1s, filter .5s ease-out;
+        } */
+
+/* +++++++++++ Zoom-n-rotate Animation ++++++++++ */
+        /* .item {
+            display: inline-block;
+            background: #fff;
+            padding: 1em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            -webkit-transition: 1s ease all;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-shadow: 2px 2px 4px 0 #ccc;
+            overflow: hidden;
+        }
+        .item img {
+            max-width: 100%;
+            transition: transform .5s ease-in-out;
+        }
+        .item:hover img{
+            transform: scale(2) rotate(25deg);
+        } */
+
+
+/* +++++++++++ Zoom in slow-motion Animation ++++++++++ */
+        /* .item {
+            display: inline-block;
+            background: #fff;
+            padding: 1em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            -webkit-transition: 1s ease all;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-shadow: 2px 2px 4px 0 #ccc;
+            overflow: hidden;
+        }
+        .item img {
+            max-width: 100%;
+            transform-origin: 50% 65%;
+            transition: transform 5s, filter 3s ease-in-out;
+            filter: brightness(150%);
+        }
+        .item:hover img{
+            filter: brightness(100%);
+            transform: scale(3);
+        } */
+
+
+/* +++++++++++ Brighten and Zoom-in Animation ++++++++++ */
+        /* .item {
+            display: inline-block;
+            background: #fff;
+            padding: 1em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            -webkit-transition: 1s ease all;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-shadow: 2px 2px 4px 0 #ccc;
+            overflow: hidden;
+        }
+        .item img {
+            max-width: 100%;
+            transition: transform 2s, filter 1.5s ease-in-out;
+            transform-origin: center center;
+            filter: brightness(50%);
+        }
+        .item:hover img{
+            filter: brightness(100%);
+            transform: scale(1.3);
+        } */
+
+
+/* +++++++++++ Horizontal Zoom-n-pan Animation ++++++++++ */
+        /* .item {
+            display: inline-block;
+            background: #fff;
+            padding: 1em;
+            margin: 0 0 1.5em;
+            width: 100%;
+            -webkit-transition: 1s ease all;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-shadow: 2px 2px 4px 0 #ccc;
+            overflow: hidden;
+        }
+        .item img {
+            max-width: 100%;
+            transition: transform .5s ease-in-out;
+            transform: scale(1.4);
+            transform-origin: 100% 0;
+        }
+        .item:hover img{
+            transform: scale(1.5) translateX(30%);
+        } */
+
+
+
+
+
+/* Responsive code */
+@media only screen and (max-width: 320px) {
+    .masonry_wrapper {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .masonry_wrapper {
+        column-count: 2;
+        -moz-column-count: 2; /* Mozila browser prefix*/
+        -webkit-column-count: 2; /* Chrome-Safari browser prefix*/
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .masonry_wrapper {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .masonry_wrapper {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
